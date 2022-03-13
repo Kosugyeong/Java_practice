@@ -63,7 +63,7 @@ public class Q07 {
 	
 	public static int getTime(int station, int change, int time) {
 		
-		int ctime = time == 1 ? 3 : time == 2 ? 4 : time == 3 ? 5 : null;	// 환승 소요 시간 예외처리를 할 수 없어서 1,2,3이 아닌 값이 들어오면 																			null값이 받아져 에러가 뜨게 처리하였다. 
+		int ctime = time == 1 ? 3 : time == 2 ? 4 : time == 3 ? 5 : null;	// 환승 소요 시간 예외처리를 할 수 없어서 1,2,3이 아닌 값이 들어오면 null값이 받아져 에러가 뜨게 처리하였다. 
 		int result = station * 2 + change * ctime;
 		return result;
 		
