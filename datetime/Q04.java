@@ -38,29 +38,30 @@ public class Q04 {
 		int year = Integer.parseInt(reader.readLine());
 
 		System.out.print("만난날(월) : ");
-		int month = Integer.parseInt(reader.readLine());
+		int month = Integer.parseInt(reader.readLine()) - 1;
 
 		System.out.print("만난날(일) : ");
 		int days = Integer.parseInt(reader.readLine());
 
 
-		Calendar now = Calendar.getInstance();
+		Calendar anniversary = Calendar.getInstance();
 
-		now.add(Calendar.DATE, 100);
+		anniversary.set(year, month, days);
+		anniversary.add(Calendar.DATE, 100);
 		System.out.printf("'%s'과(와) '%s'의 기념일\n", boy, girl);
-		System.out.printf("100일 : %tF\n", now);
+		System.out.printf("100일 : %tF\n", anniversary);
 
-		now.add(Calendar.DATE, 100);
-		System.out.printf("200일 : %tF\n", now);
+		anniversary.add(Calendar.DATE, 100);
+		System.out.printf("200일 : %tF\n", anniversary);
 
-		now.add(Calendar.DATE, 100);
-		System.out.printf("300일 : %tF\n", now);
+		anniversary.add(Calendar.DATE, 100);
+		System.out.printf("300일 : %tF\n", anniversary);
 
-		now.add(Calendar.DATE, 200);
-		System.out.printf("500일 : %tF\n", now);
+		anniversary.add(Calendar.DATE, 200);
+		System.out.printf("500일 : %tF\n", anniversary);
 
-		now.add(Calendar.DATE, 500);
-		System.out.printf("1000일 : %tF", now);
+		anniversary.add(Calendar.DATE, 500);
+		System.out.printf("1000일 : %tF", anniversary);
 
 
 
