@@ -84,3 +84,18 @@ public class Q07 {
 	}
 
 }
+
+// 풀이받은 코드 이 코드 이해하고 이렇게 적용하려고 하기. > Right Shift
+
+//int [] nums = {5, 6, 1, 3, 2, 0, 0, 0, 0, 10};
+//int index = 2;
+//int value = 100;
+//
+//System.out.println(Arrays.toString(nums));
+//
+//// Right Shift > for 감소
+//for(int i=nums.length-2;i>=index;i--) {
+//	nums[i+1] = nums[i]; //이동
+//}
+//nums[index]=value;
+//System.out.println(Arrays.toString(nums));
