@@ -22,7 +22,7 @@
 클래스의 static 관련 문제 두 개를 풀었다. 그 중 첫번째 문제는 어려움 없이 풀었는데 두번째 문제에서 어려움을 겪었다.
 첫번째로는 Coffee클래스의 총판매액이라는 변수의 값을 다른 클래스에서 출력하는 것이였다. 그래서 Coffee 클래스의 setter와 getter를 생성해 setter 부분에 단가와 총 량을 곱한 값을 저장하게 만들었는데 
 
-public static void setBeanTotalPrice(int beanTotalPrice) { 
+	public static void setBeanTotalPrice(int beanTotalPrice) { 
 		Coffee.beanTotalPrice = bean * beanUnitPrice;
 	}
  
@@ -55,7 +55,6 @@ public static void setBeanTotalPrice(int beanTotalPrice) {
  
  <고친 코드>
   	public Espresso[] makeEspressoes(int bean, int count) {
-
 		Espresso[] espresso = new Espresso[count];
 
 		for (int i = 0; i < count; i++) {
