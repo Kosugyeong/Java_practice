@@ -54,6 +54,7 @@
  결론을 내자면, 다른 클래스의 객체를 배열로 여러개 생성해서 setter에 접근해 값을 넣으려면 또 다른 객체를 생성해 참조 변수에 담아준 뒤 그 값을 클래스 객체 배열에 넣어줘야 한다. 이렇게 하지않으면 nullPoiter 오류가 뜨니 조심하고 꼭 기억하기!
  
  <고친 코드>
+ 
   	public Espresso[] makeEspressoes(int bean, int count) {
 		Espresso[] espresso = new Espresso[count];
 
