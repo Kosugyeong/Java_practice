@@ -23,13 +23,12 @@
 첫번째로는 Coffee클래스의 총판매액이라는 변수의 값을 다른 클래스에서 출력하는 것이였다. 그래서 Coffee 클래스의 setter와 getter를 생성해 setter 부분에 단가와 총 량을 곱한 값을 저장하게 만들었는데 
 
 public static void setBeanTotalPrice(int beanTotalPrice) { 
-
 		Coffee.beanTotalPrice = bean * beanUnitPrice;
 	}
  
  위와 같이 했더니 출력할 때 제대로 된 값이 안나오고 계속 0으로 나왔다. 
+ 
  	public static int getBeanTotalPrice() {
-
 		return bean * beanUnitPrice;
 	}
  그래서 위와 같이 결국에 getter 부분 return에 식을 넣으니 계산된 값이 제대로 나왔다. ---> 이유가 무엇일까!!!!!!!!!!
