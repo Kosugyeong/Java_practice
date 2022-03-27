@@ -21,6 +21,7 @@
 <2022-3-27>
 클래스의 static 관련 문제 두 개를 풀었다. 그 중 첫번째 문제는 어려움 없이 풀었는데 두번째 문제에서 어려움을 겪었다.
 첫번째로는 Coffee클래스의 총판매액이라는 변수의 값을 다른 클래스에서 출력하는 것이였다. 그래서 Coffee 클래스의 setter와 getter를 생성해 setter 부분에 단가와 총 량을 곱한 값을 저장하게 만들었는데 
+
 public static void setBeanTotalPrice(int beanTotalPrice) { 
 
 		Coffee.beanTotalPrice = bean * beanUnitPrice;
@@ -73,3 +74,7 @@ public static void setBeanTotalPrice(int beanTotalPrice) {
  
  
  느낀점 : 이번 과제를 하며 클래스를 사용해보고 static 변수도 사용해봤는데 클래스는 어렵지만 코드를 짤 때 클래스로 나눔으로써 가독성도 더 높고 편리한 것 같다. 그리고 공용 변수와 같이 여러 클래스에서도 함께 사용하는 변수를 static으로 지정해놓고 공통변수로 같이 사용하면 된다는 사용법 또한 알게 되었다. 
+ 
+*** static -> 정적 변수 -> 클래스 변수 -> 공용 변수
+1. 하나의 클래스로부터 만들어진 모든 객체가 공통으로 가지는 데이터를 저장하는 변수
+2. 모든 객체의 공통된 특성(****)
