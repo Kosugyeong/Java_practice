@@ -1,0 +1,1 @@
+에러를 중앙으로 모는 방식(throws Exception 적고 main에서 try catch로 한번에 잡아서 처리하는 것)과 에러를 각자 해결하는 방식(지역에서 try catch로 해결) 두 가지가 있는데 각자 스타일이다.
